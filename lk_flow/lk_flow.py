@@ -50,3 +50,4 @@ def plot_quiver_uv(u, v):
     plt.quiver(u, v, scale_units='xy', angles='xy', scale=0.1, width=0.001, color='blue',
                minshaft=1, minlength=0)
     plt.show()
+    fig.savefig('./suize_flow.png')

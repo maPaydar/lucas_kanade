@@ -9,5 +9,7 @@ frame1 = frames[3]
 frame2 = frames[4]
 frame1 = cv2.cvtColor(frame1, cv2.COLOR_BGR2GRAY)
 frame2 = cv2.cvtColor(frame2, cv2.COLOR_BGR2GRAY)
+
 u, v = lucas_kanade(frame1, frame2, window_size=6)
+
 plot_quiver_uv(u, v)
